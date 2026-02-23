@@ -1411,4 +1411,11 @@ class assAccountingQuestion extends assQuestion
 		}
 		return $row + 1;
 	}
+	/**
+ * Returns the database table name for the answers of this question type.
+ */
+ public function getAnswerTableName() : string
+{
+    return 'qpl_a_assAccountingQuestion'; // Name anpassen, falls in deinem Plugin anders
+}
 }
