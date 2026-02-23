@@ -1065,7 +1065,7 @@ class assAccountingQuestion extends assQuestion
      * @return integer/array $points/$details (array $details is deprecated !!)
      * @throws ilTestException
      */
-	public function calculateReachedPoints($active_id, $pass = NULL,  $authorizedSolution = true, $returndetails = FALSE)
+	public function calculateReachedPoints($active_id, $pass = null, $authorizedSolution = true, $returndetails = false): array|float
 	{
 		if ($returndetails)
 		{
